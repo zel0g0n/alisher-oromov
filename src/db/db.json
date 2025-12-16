@@ -1,0 +1,147 @@
+{
+
+  "about": {
+    "aboutMain": [
+      {
+        "title": "Education",
+        "descr": "PDP Academy Frontend (2022-2023) - Strong foundation in modern web development technologies and best practices.",
+        "id": "10298787"
+      },
+      {
+        "title": "Experience",
+        "descr": "I did an internship at OWA for 2 months. I have been developing real projects as a freelancer for over 1 year. I have also developed my own startup projects.",
+        "id": "10298978787"
+      },
+      {
+        "title": "Why Choose Me",
+        "descr": "Responsible approach to work, striving for perfection in code quality, and focus on user experience with interactive and convenient interfaces.",
+        "id": "102981667787"
+      }
+    ],
+    "aboutAdv": [
+      {
+        "title": "Years Experience",
+        "duration": "1.5+",
+        "id": 12984799
+      },
+      {
+        "title": "Projects",
+        "duration": "9+",
+        "id": 1124799
+      },
+      {
+        "title": "Languages",
+        "duration": "2",
+        "id": 14804799
+      },
+      {
+        "title": "Always Learning",
+        "duration": "24/7",
+        "id": 88761920
+      }
+    ]
+  },
+  "skills": [
+    {
+      "name": "HTML",
+      "id": 1,
+      "icon": "fa-brands fa-html5",
+      "style": "orange"
+    },
+    {
+      "name": "CSS",
+      "id": 2,
+      "icon": "fa-brands fa-css3",
+      "style": "blue"
+    },
+    {
+      "name": "JavaScript",
+      "id": 3,
+      "icon": "fa-brands fa-js",
+      "style": "yellow"
+    },
+ 
+    {
+      "name": "ReactJS",
+      "id": 5,
+      "icon": "fa-brands fa-react",
+      "style": "aqua"
+    },
+    {
+      "name": "SCSS/Sass",
+      "id": 4,
+      "icon": "fa-brands fa-sass",
+      "style": "purple"
+    },
+    {
+      "name": "NodeJS",
+      "id": 6,
+      "icon": "fa-brands fa-node-js",
+      "style": "green"
+    },
+    {
+      "name": "NextJS",
+      "id": 7,
+      "icon": "fa-brands fa-react",
+      "style": "grey"
+    },
+    {
+      "name": "Promlem Solving",
+      "id": 8,
+      "icon": "fa-solid fa-code",
+      "style": "blue"
+    }
+   
+  ],
+  "projectDatas": [
+    {
+      "title": "Edu-Control.uz",
+      "id": 1837917,
+      "descr": "",
+      "pathname": "",
+      "type": "startup",
+      "technologies": ["NestJS", "TypeScript", "NextJS", "Tailwind CSS", "GraphQL"]
+    },
+    {
+      "title": "MLbb.uz",
+      "id": 1836417,
+      "descr": "",
+      "pathname": "",
+      "type": "startup",
+      "technologies": ["ExpressJS", "TypeScript", "ReactJS", "Tailwind CSS", "MongoDB"]
+    },
+    {
+      "title": "Web-supporter.uz",
+      "id": 1832417,
+      "descr": "",
+      "pathname": "",
+      "type": "startup",
+      "technologies": ["ExpressJS", "TypeScript", "ReactJS", "Tailwind CSS", "MongoDB"]
+    },
+    {
+      "title": "Zelo-Edu.uz",
+      "id": 1837817,
+      "descr": "",
+      "pathname": "",
+      "type": "startup",
+      "technologies": ["ExpressJS", "TypeScript", "ReactJS", "Tailwind CSS", "MongoDB"]
+    },
+    {
+      "title": "PearlHouse.uz",
+      "id": 9836417,
+      "descr": "",
+      "pathname": "",
+      "type": "freelancing",
+      "technologies": ["ExpressJS", "TypeScript", "ReactJS", "Tailwind CSS", "MongoDB"]
+    },
+    {
+      "title": "Ami-assemblers-group.uz",
+      "id": 18366997,
+      "descr": "",
+      "pathname": "",
+      "image": "/aag.jpg",
+      "type": "freelancing",
+      "technologies": ["ExpressJS", "TypeScript", "ReactJS", "Tailwind CSS", "MongoDB"]
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+.about {
+  
+  max-width: 1300px;
+  margin: 0 auto;
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    &-features {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      width: max-content;
+    } 
+    &-indicator {
+      display: grid;
+      gap: 30px;
+      grid-template-columns: auto auto;
+      grid-template-rows: auto auto;
+    }  
+
+  }
+  
+}

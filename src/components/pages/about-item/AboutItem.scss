@@ -1,0 +1,21 @@
+@import '../../../styles/variable.scss';
+
+
+.a-item {
+  width: 560px;
+  height: 180px;
+  border-radius: 12px;
+  border: 1px solid #004953;
+  margin-bottom: 16px;
+  padding: 20px;
+  .a-title {
+    color: blue;
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  .a-descr {
+    color: $white-text;
+    font-size: 17px;
+    line-height: 26px;
+  }
+}

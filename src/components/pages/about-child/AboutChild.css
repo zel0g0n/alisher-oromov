@@ -1,0 +1,22 @@
+.about__child {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  width: 200px;
+  height: 170px;
+  border: 1px solid #004953;
+  border-radius: 12px;
+  padding: 20px;
+}
+.about__child .x-title {
+  color: blue;
+  font-size: 20px;
+}
+.about__child .x-text {
+  color: rgba(255, 255, 255, 0.7725490196);
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 26px;
+}/*# sourceMappingURL=AboutChild.css.map */

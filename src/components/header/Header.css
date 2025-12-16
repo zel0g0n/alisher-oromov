@@ -1,0 +1,48 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 95%;
+  height: 80px;
+  margin: 0 auto 10px auto;
+  background-color: rgba(46, 45, 61, 0.3647058824);
+  padding: 0 10px;
+}
+.header a p {
+  font-size: 32px;
+  font-weight: bold;
+}
+.header nav ul {
+  display: flex;
+  gap: 25px;
+}
+.header nav ul li a {
+  color: rgba(255, 255, 255, 0.7725490196);
+  font-size: 18px;
+  font-weight: 600;
+  position: relative;
+}
+.header nav ul li a:hover::after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 50%;
+  height: 2px;
+  margin-top: 4px;
+  background: linear-gradient(94deg, #5540f0 33.29%, #c40d72 67.01%);
+}
+.header nav ul li .active-nav::after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 50%;
+  height: 2px;
+  margin-top: 4px;
+  background: linear-gradient(94deg, #5540f0 33.29%, #c40d72 67.01%);
+}
+.header .theme {
+  background: none;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+}/*# sourceMappingURL=Header.css.map */

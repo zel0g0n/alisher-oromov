@@ -1,0 +1,64 @@
+@import '../../../styles/variable.scss';
+@import '../../../styles/button.scss';
+.home {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1300px;
+  height: 700px;
+  background-color: inherit;
+  margin: 0px auto;
+  &__info {
+    width: 50%;
+    .title {
+      font-size: 50px;
+      color: $white-text;
+      font-weight: 900;
+      margin-bottom: 20px;
+      span {
+        display: block;
+      }
+    }
+    .paragraph {
+      font-size: 32px;
+      font-weight: 400;
+      color: rgba(146, 144, 144, 1);
+      margin-bottom: 10px;
+    }
+    .descr {
+      font-size: 18px;
+      color: $white-text;
+      font-weight: 400;
+      line-height: 30px;
+      margin-bottom: 50px;
+    }
+    &-item  {
+      display: flex;
+      gap: 35px;
+      a {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #fff;
+        img {
+          width: 30px;
+          height: 30px;
+          margin-right: 8px;
+        }
+      }
+    }
+  }
+  &__img {
+    width: 520px;
+    height: 520px;
+    border-radius: 30px;
+    overflow: hidden;
+    padding: 3px;
+    background: linear-gradient(94deg,  #5540f0ff 13.29%, blue 20%,  #c40d72ff 42.01%);
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 30px;
+    }
+  }
+}

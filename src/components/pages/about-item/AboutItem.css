@@ -1,0 +1,18 @@
+.a-item {
+  width: 560px;
+  height: 180px;
+  border-radius: 12px;
+  border: 1px solid #004953;
+  margin-bottom: 16px;
+  padding: 20px;
+}
+.a-item .a-title {
+  color: blue;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.a-item .a-descr {
+  color: rgba(255, 255, 255, 0.7725490196);
+  font-size: 17px;
+  line-height: 26px;
+}/*# sourceMappingURL=AboutItem.css.map */
