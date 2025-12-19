@@ -143,5 +143,43 @@
       "type": "freelancing",
       "technologies": ["ExpressJS", "TypeScript", "ReactJS", "Tailwind CSS", "MongoDB"]
     }
+  ],
+  "contactData": [
+    {
+      "name": "Phone",
+      "content":"+998 (90) 891 01 80",
+      "link": "tel:+998908910180",
+      "icon": "fa-solid fa-phone"
+    },
+    {
+      "name": "Telegram",
+      "content":"@zelo_seven",
+      "link": "https://t.me/zelo_seven",
+      "icon": "fa-solid fa-paper-plane"
+    },
+    {
+      "name": "Instagram",
+      "content":"Alisher Oromov",
+      "link": "https://instagram.com/oromov180503",
+      "icon": "fa-brands fa-instagram"
+    },
+    {
+      "name": "Gmail",
+      "content":"alisheroromov473@gmail.com",
+      "link": "mailto:alisheroromov473@gmail.com",
+      "icon": "fa-regular fa-envelope"
+    },
+    {
+      "name": "Location",
+      "content":"Uzbekistan, Tashkent",
+      "link": "",
+      "icon": "fa-solid fa-location-dot"
+    },{
+      "name": "Linkedin",
+      "content":"Alisher Oromov",
+      "link": "https://www.linkedin.com/in/alisher-oromov-a5ab632a3/",
+      "icon": "fa-brands fa-square-linkedin"
+    }
+
   ]
 }

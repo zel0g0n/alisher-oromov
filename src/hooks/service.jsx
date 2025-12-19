@@ -17,8 +17,12 @@ export const useService = () => {
     const data = await request(`${_baseURL}/projectDatas`)
     return data
   }
+  const getContactData = async () => {
+    const data = await request(`${_baseURL}/contactData`)
+    return await data
+  }
 
-  return {getAboutData,getSkillsData,getProjectsData}
+  return {getAboutData,getSkillsData,getProjectsData, getContactData}
 }
 
 

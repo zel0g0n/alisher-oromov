@@ -1,0 +1,124 @@
+@import '../../../styles/variable.scss';
+.contact {
+  max-width: 1300px;
+  margin: 80px auto;
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    height: 430px;
+    width: 100%;
+    &-sm {
+      width: 48%;
+      border: 2px solid #5140f0ff;
+      padding: 30px;
+      border-radius: 20px;
+      &--title {
+        font-size: 26px;
+        font-weight: 600;
+        color: $white-text;
+        margin-bottom: 60px;
+      }
+      .social {
+        ul {
+          display: grid;
+          grid-template-columns: auto auto;
+          grid-template-rows: 50px 50px 50px; 
+          gap: 20px 40px;
+          li {
+            a {
+              display: flex;
+              align-items: center;
+              gap: 12px;
+              transition: .3s;
+              div {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                background-color: #2e2d3d5d;
+                i {
+                  font-size: 20px;
+                }
+              }
+              p {
+                color: $white-text;
+                font-size: 16px;
+                transition: .3s;
+
+              }
+              &:hover {
+                p {
+                  background: linear-gradient(94deg, #5540f0ff 33.29%, #c40d72ff 67.01%);
+                  background-clip: text;
+                  -webkit-background-clip: text;
+                  -webkit-text-fill-color: transparent; 
+                }
+              }
+            }
+
+          }
+        }
+      }
+    }
+    &-sms {
+      width: 48%;
+      border: 2px solid #5140f0ff;
+      padding: 30px;
+      border-radius: 20px;
+      form {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 15px 20px;
+        div {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          label {
+            color: $white-text;
+            font-size: 18px;
+          }
+          input, textarea {
+            width: 100%;
+            height: 35px;
+            border: 2px solid #5540f0ff;
+            background-color: #2e2d3d5d;
+            border-radius: 8px;
+            outline: none;
+            padding: 10px;
+            color: $white-text;
+            font-size: 16px;
+          }
+        }
+        .number , .msg {
+          grid-column-start: 1;
+          grid-column-end: 3;
+        }
+        .msg {
+          textarea {
+            height: 90px;
+          }
+        }
+        .form-submit {
+          grid-column-start: 1;
+          grid-column-end: 3;
+          width: 100%;
+          height: 40px;
+          margin-top: 20px;
+          border-radius: 10px;
+          background-color: #5140f0ff;
+          border: none;
+          color: #fff;
+          font-size: 16px;
+          i {
+            margin-left: 18px;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}

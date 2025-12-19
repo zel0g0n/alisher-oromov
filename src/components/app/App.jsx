@@ -9,6 +9,8 @@ import Home from '../pages/home/Home'
 import About from '../pages/about/About'
 import Skill from '../pages/skill/Skill'
 import Projects from '../pages/projects/Projects'
+import Contact from '../pages/contact/Contact'
+import Footer from '../pages/footer/Footer'
 
 function App() {
   const {Provider} = appContext
@@ -21,6 +23,8 @@ function App() {
         <About/>
         <Skill/>
         <Projects/>
+        <Contact/>
+        <Footer/>
         {/* <Routes>
 
 

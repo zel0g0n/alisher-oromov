@@ -2,7 +2,8 @@ export const initialState = {
   theme: 'dark',
   about: null,
   skills: null,
-  projects: null
+  projects: null,
+  contactData: null
 }
 
 export const reducer = (state,action) => {
@@ -15,5 +16,7 @@ export const reducer = (state,action) => {
       return {...state, skills: action.payload}
     case 'projects':
       return {...state, projects: action.payload}
+    case "contact":
+      return {...state, contactData: action.payload}
   }
 }
