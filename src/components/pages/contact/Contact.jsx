@@ -11,11 +11,12 @@ const Contact = () => {
   useEffect(() => {
     let ignore = true
 
-    const get = async () => {
+    const get =  () => {
       if(ignore) {
         try {
-          const data = await getContactData()
+          const data =  getContactData()
           dispatch({type: 'contact', payload: data})
+          console.log(data)
         }catch(error) {
           throw new Error(error)
         }finally {

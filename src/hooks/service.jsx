@@ -4,16 +4,16 @@ export const useService = () => {
   const _baseURL = 'http://localhost:3000'
 
 
-  const getAboutData = async() => {
+  const getAboutData = () => {
     return data.about
   } 
-  const getSkillsData = async () => {
+  const getSkillsData =  () => {
     return data.skills
   }
-  const getProjectsData = async () => {
+  const getProjectsData =  () => {
     return data.projectDatas
   }
-  const getContactData = async () => {
+  const getContactData =  () => {
     return  data.contactData
   }
 
