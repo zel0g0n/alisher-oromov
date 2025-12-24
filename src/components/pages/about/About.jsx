@@ -24,9 +24,9 @@ const About = () => {
   
 
   return (
-    <div className='about app-item'>
-      <h4 className="title-nav-item">About Me</h4>
-      <p className="descr-nav-item">
+    <div id='about' className={`about ${state.theme?'about-light':''} app-item`}>
+      <h4 className={`title-nav-item ${state.theme?"light-nav":''}`}>About Me</h4>
+      <p className={`descr-nav-item ${state.theme?"light-nav":''}`}>
         Get to know more about my journey and passion for technology
       </p>
       <div className="about__item">

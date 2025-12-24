@@ -27,9 +27,9 @@ const Projects = () => {
   },[])
 
   return (
-    <div className='projects'>
-      <h4 className="title-nav-item">Projects and StartUPs</h4>
-      <p className="descr-nav-item">StartUp projects and projects completed through freelancing</p>
+    <div id='projects' className={`projects ${state.theme?'project-light':''}`}>
+      <h4 className={`title-nav-item ${state.theme?"light-nav":''}`}>Projects and StartUPs</h4>
+      <p className={`descr-nav-item ${state.theme?"light-nav":''}`}>StartUp projects and projects completed through freelancing</p>
       <div className='projects__list'>
         {state.projects ? (
           state.projects.map(item => (

@@ -1,8 +1,11 @@
+import { useContext } from 'react'
 import './ProjectItem.scss'
+import { appContext } from '../../context/appContext'
 
 const ProjectItem = ({data}) => {
+  const {state} = useContext(appContext)
   return (
-    <div className='project__item'>
+    <div className={`project__item ${state.theme?'project__item-light':''}`}>
       <div className="project__item-block">
         {
           data.image?(

@@ -23,9 +23,9 @@ const Skill = () => {
     get()
   },[])
   return (
-    <div className='skill'>
-      <h4 className="title-nav-item">Skills & Technologies</h4>
-      <p className="descr-nav-item">
+    <div id='skills' className={`skill  ${state.theme?'skill-light':''}`}>
+      <h4 className={`title-nav-item ${state.theme?"light-nav":''}`}>Skills & Technologies</h4>
+      <p className={`descr-nav-item ${state.theme?"light-nav":''}`}>
         Get to know more about my journey and passion for technology
       </p>
       <ul className="skill__list">

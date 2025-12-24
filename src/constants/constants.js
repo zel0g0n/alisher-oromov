@@ -4,27 +4,27 @@ const idGenerator = () => {
 export const navbarData = [
   {
     title: 'Home',
-    path: '/',
+    path: '#',
     id: idGenerator()
   },
   {
     title: 'About',
-    path: '/about',
+    path: '#about',
     id: idGenerator()
   },
   {
     title: 'Skills',
-    path: '/skills',
+    path: '#skills',
     id: idGenerator()
   },
   {
     title: 'Projects',
-    path: '/projects',
+    path: '#projects',
     id: idGenerator()
   },
   {
     title: 'Contact',
-    path: '/contact',
+    path: '#contact',
     id: idGenerator()
   }
 ]

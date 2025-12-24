@@ -2,7 +2,7 @@
 import { Routes } from 'react-router'
 import './App.scss'
 import Header from '../header/Header'
-import { useReducer } from 'react'
+import { useContext, useReducer } from 'react'
 import { appContext } from '../../context/appContext'
 import { initialState, reducer } from '../../context/appReducer'
 import Home from '../pages/home/Home'
@@ -17,7 +17,7 @@ function App() {
   const [state, dispatch] = useReducer(reducer,initialState)
   return (
     <Provider value={{state,dispatch}}>
-      <div className='app'>
+      <div className={`app ${state.theme?'light':'dark'}`}>
         <Header/>
         <Home/>
         <About/>

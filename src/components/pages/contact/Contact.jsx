@@ -6,7 +6,7 @@ import { useService } from '../../../hooks/service'
 const Contact = () => {
 
   const {state,dispatch} = useContext(appContext)
-  const {getContactData} = useService()
+  const {getContactData,sendContactRequest} = useService()
 
   useEffect(() => {
     let ignore = true
@@ -28,11 +28,21 @@ const Contact = () => {
 
   },[])
 
+  const  sendMessage = (e) => {
+    e.preventDefault()
+    sendContactRequest(state.formData)
+    e.target.reset()
+  }
+
+  const getValue = e => {
+    dispatch({type: 'send',payload: {...state.formData, [e.target.name]: e.target.value}})   
+  }
+
 
   return (
-    <div className='contact'>
-      <h4 className="title-nav-item">Contact with me</h4>
-      <p className="descr-nav-item">Let's discuss your project</p>
+    <div id='contact' className={`contact ${state.theme?'contact-light':''}`}>
+      <h4 className={`title-nav-item ${state.theme?"light-nav":''}`}>Contact with me</h4>
+      <p className={`descr-nav-item ${state.theme?"light-nav":''}`}>Let's discuss your project</p>
       <div className="contact__item">
         <div className="contact__item-sm">
           <p className="contact__item-sm--title">Contact information</p>
@@ -58,22 +68,22 @@ const Contact = () => {
           </div>
         </div>
         <div className="contact__item-sms">
-          <form action="">
+          <form onSubmit={e => sendMessage(e)} action="">
             <div className="name">
-              <label htmlFor="">Ismingiz</label>
-              <input type="text" name="name" id="name" />
+              <label htmlFor="">Name</label>
+              <input onChange={getValue} type="text" name="name" id="name" />
             </div>
             <div className="lname">
-              <label htmlFor="">Familiyangiz</label>
-              <input type="text" name="name" id="name" />
+              <label htmlFor="">Lastname</label>
+              <input onChange={getValue} type="text" name="lastname" id="name" />
             </div>
             <div className="number">
-              <label htmlFor="">Raqamingiz</label>
-              <input type="text" name="name" id="name" />
+              <label htmlFor="">Phone number</label>
+              <input onChange={getValue} type="text" name="phone" id="name" />
             </div>
             <div className="msg">
-              <label htmlFor="">Xabaringiz</label>
-              <textarea   id="name" />
+              <label htmlFor="">Message</label>
+              <textarea onChange={getValue} name='msg'   id="name" />
             </div>
             <button className="form-submit">
               SEND MESSAGE 

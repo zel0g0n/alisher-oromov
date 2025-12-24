@@ -6,8 +6,6 @@
   justify-content: center;
   flex-direction: column;
   gap: 20px;
-  width: 200px;
-  height: 170px;
   border: 1px solid #004953;
   border-radius: 12px;
   padding: 20px;
@@ -22,5 +20,16 @@
     font-weight: 700;
     line-height: 26px;
     
+  }
+}
+.about__child-light {
+  border: none;
+  box-shadow: 0px 0px 8px 2px #00077766;
+  .x-title {
+    font-weight: 700;
+    font-size: 20px;
+  }
+  .x-text {
+    color: grey;
   }
 }

@@ -1,8 +1,10 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import './Home.scss'
+import { appContext } from '../../../context/appContext'
 const Home = () => {
+  const {state} = useContext(appContext)
   return (
-    <div className='home'>
+    <div id='home' className={`home ${state.theme?'home-light':''}`}>
       <div className="home__info">
         <h1 className="title">Hello bro, I'm <span className='special'>Oromov Alisher</span></h1>
         <p className="paragraph">Fullstack JavaScript Developer & Problem Solver</p>
@@ -14,7 +16,7 @@ const Home = () => {
             <img src="/download.png" alt="download" />
             <span>CV</span>
             </a>
-          <button className='btn btn-primary'>Contact Me</button>
+          <a href='#contact' className='btn btn-primary'>Contact Me</a>
         </div>
 
       </div>

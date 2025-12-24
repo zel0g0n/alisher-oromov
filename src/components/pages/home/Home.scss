@@ -8,6 +8,7 @@
   height: 700px;
   background-color: inherit;
   margin: 0px auto;
+  padding-top: 50px;
   &__info {
     width: 50%;
     .title {
@@ -35,7 +36,7 @@
     &-item  {
       display: flex;
       gap: 35px;
-      a {
+      .cv {
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -46,6 +47,11 @@
           margin-right: 8px;
         }
       }
+      & a {
+        display: flex;
+        align-items: center;
+      }
+
     }
   }
   &__img {
@@ -59,6 +65,100 @@
       width: 100%;
       height: auto;
       border-radius: 30px;
+    }
+  }
+}
+
+.home-light {
+  .home__info {
+    .title {
+      color: #111777;
+    }
+    .paragraph {
+      color: #111777;
+    }
+    .descr {
+      color: #111777;
+    }
+    &-item {
+      a {
+        background-color: none;
+        color: #5540f0ff;
+        border: 3px solid #5540f0ff;
+      }
+    }
+  }
+}
+
+
+@media only screen and (max-width: 1260px) and (min-width: 1024px) {
+  .home {
+    padding: 0 15px;
+    padding-top: 60px;
+    &__img {
+      width: 47%;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width:1024px) and (min-width: 768px) {
+  .home {
+    flex-direction: column;
+    height: max-content;
+    margin: 80px auto;
+    gap: 100px;
+    padding: 0 15px;
+    padding-top: 40px;
+    &__info {
+      width: 80%; 
+    }
+    &__img {
+      width: 80%;
+      height: auto;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width:768px) and (min-width: 320px) {
+  .home {
+    flex-direction: column;
+    height: max-content;
+    margin: 80px auto;
+    gap: 100px;
+
+    &__info {
+      width: 90%; 
+      .title {
+        font-size: 38px;
+      }
+      .paragraph {
+        font-size: 26px;
+      }
+      .descr {
+        font-size: 16px;
+        line-height: 26px;
+      }
+      &-item {
+        a , button {
+          font-size: 15px;
+        }
+      }
+    }
+    &__img {
+      width: 80%;
+      height: auto;
+      img {
+        width: 100%;
+        height: 100%;
+      }
     }
   }
 }

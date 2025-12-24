@@ -3,11 +3,16 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 95%;
+  width: 100%;
   height: 80px;
   margin: 0 auto 10px auto;
-  background-color: #2e2d3d5d;
-  padding: 0 20px;
+  background-color: #2e2d3d;
+  padding: 0 40px;
+  box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  scroll-margin-top: 90px;
+  z-index: 9;
   a {
     p {
       font-size: 32px;
@@ -52,11 +57,97 @@
       }
     }
   }
+  .btns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    gap: 20px;
+  }
   .theme {
     background: none;
     border: none;
-    font-size: 18px;
+    font-size: 24px;
     cursor: pointer;
   }
+  .modal-btn {
+    display: none;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    i {
+      color: $white-text;
+      font-size: 26px;
+      font-weight: 600;
+    }
+  }
 
+}
+.header-light {
+  background-color: #fff;
+  border-bottom: 1px solid #00077790;
+  
+  nav ul li a {
+    color: #5540f0ff;
+  }
+  .modal-btn i {
+    color: #000077;
+  }
+  
+}
+
+@media only screen and (max-width: 1300px) and (min-width: 768px) {
+  .header {
+    padding: 0 20px;
+  }
+}
+@media only screen and (max-width: 767px) and (min-width: 320px) {
+  
+  .header {
+    width: 100%;
+    padding: 0 5px;
+    a p{
+      font-size: 26px;
+    }
+    nav {
+      position: fixed;
+      width: 100%;
+      background-color: #00077766;
+      backdrop-filter: blur(10px);
+      right: -100%;
+      top: 80px;
+      transition: .6s;
+      ul {
+        flex-direction: column;
+        height: calc(100vh - 80px);
+        flex-direction: column;
+        padding: 50px 30px;
+        gap: 40px;
+      }
+    }
+    .open-modal {
+      background-color: #00007790;
+      backdrop-filter: blur(5px);
+      transition: .6s;
+      right: -20%;
+      box-sizing: border-box;
+      top: 80px;
+      border-left: 1px solid #00077790;
+      ul {
+        height: calc(100vh - 80px);
+        flex-direction: column;
+        padding: 50px 30px;
+        gap: 40px;
+        
+      }
+    }
+    .open-modal-light {
+      background-color: #ffffff20;
+      backdrop-filter: blur(10px);
+    }
+    .modal-btn {
+      display: flex;
+    }
+  }
+  
 }

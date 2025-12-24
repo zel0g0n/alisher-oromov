@@ -2,6 +2,7 @@
   max-width: 1300px;
   margin: 80px auto;
   height: max-content;
+  padding: 0 15px;
   &__list {
     display: grid;
     grid-template-rows: 160px 160px;
@@ -25,6 +26,56 @@
         font-size: 22px;
         color: #ffffff;
         font-weight: 600;
+      }
+    }
+  }
+}
+.skill-light {
+  .skill__list {
+    &-item {
+      box-shadow: 0px 0px 8px 2px #00077766;
+      border: none;
+      .skill-name {
+        color: blue;
+
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 768px) {
+  .skill {
+    &__list {
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: auto;
+      &-item {
+        height: 160px;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 768px) and (min-width: 520px) {
+  .skill {
+    padding: 0 5px;
+    &__list {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: auto;
+      &-item {
+        height: 170px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 520px) and (min-width: 320px) {
+  .skill {
+    padding: 0 5px;
+    &__list {
+      justify-content: center;
+      grid-template-columns: repeat(1, 80%);
+      grid-template-rows: auto;
+      &-item {
+        height: 170px;
       }
     }
   }
