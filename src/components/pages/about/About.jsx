@@ -13,6 +13,7 @@ const About = () => {
     let ignore = true
     const get = async () => {
       const data = await getAboutData()
+
       if(!ignore) {
         dispatch({type: 'about',payload: data})
       }

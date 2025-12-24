@@ -1,10 +1,8 @@
-import { useHttp } from "./useHttp"
 import { tgToken,chatID } from "../.private"
 import { data } from "../constants/constants"
 export const useService = () => {
   const _baseURL = 'http://localhost:3000'
 
-  const request = useHttp()
 
   const getAboutData = async() => {
     return data.about
@@ -16,7 +14,7 @@ export const useService = () => {
     return data.projectDatas
   }
   const getContactData = async () => {
-    return await data.contactData
+    return  data.contactData
   }
 
   function dataExchange(data) {
