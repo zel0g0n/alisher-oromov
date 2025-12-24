@@ -26,7 +26,7 @@ const Header = () => {
           {
               navbarData.map(item => (
                 <li key={item.id}>
-                  <a href={item.path} className={toggleActiveNav}  to={item.path}>
+                  <a onClick={toggleModal} href={item.path} className={toggleActiveNav}  to={item.path}>
                     {item.title}
                   </a>
                 </li>
